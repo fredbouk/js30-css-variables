@@ -66,17 +66,11 @@
     const bColor = document.querySelector('#base')
     
     /* Updates the CSS variables */
-    blur.addEventListener('input', evt => {
-           root.style.setProperty('--blur', `blur(${evt.target.value}px)`)
-      });
+    blur.addEventListener('input', evt => root.style.setProperty('--blur', `blur(${evt.target.value}px)`) );
     
-    space.addEventListener('input', evt => {
-        root.style.setProperty('--space', `${evt.target.value}px`)
-    });
+    space.addEventListener('input', evt => root.style.setProperty('--space', `${evt.target.value}px`) );
 
-    bColor.addEventListener('input', evt => {
-        root.style.setProperty('--bColor', `${evt.target.value}`)
-    });
+    bColor.addEventListener('input', evt => root.style.setProperty('--bColor', `${evt.target.value}`) );
 
   </script>
 
